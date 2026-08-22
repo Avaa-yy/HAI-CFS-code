@@ -1,0 +1,28 @@
+column_name,data_type,description
+participant_id,integer,Pseudonymous participant identifier
+participant_group,category,Participant group: medical_student or ophthalmologist
+confidence_condition,integer,AI-confidence condition: 1 no confidence; 2 softmax confidence; 3 meta-confidence
+image_id,integer,Retinal image identifier
+eye,category,Image laterality: Left or Right
+ground_truth,category,Ground-truth diagnosis
+ai_confidence_1,float,First AI confidence component
+ai_confidence_2,float,Second AI confidence component
+ai_choice,category,AI diagnosis
+ai_initial_agreement,binary,Whether the AI and initial human choices agree
+initial_choice,category,Initial human diagnosis
+final_choice,category,Final human diagnosis after viewing AI information
+choice_changed,binary,Whether the participant changed the initial choice
+initial_confidence,float,Initial human confidence
+final_confidence,float,Final human confidence
+initial_response_time,float,Initial-choice response time
+final_response_time,float,Final-choice response time
+initial_confidence_time,float,Initial-confidence response time
+final_confidence_time,float,Final-confidence response time
+stayed_with_initial,binary,Whether the participant retained the initial choice
+ai_correct,binary,Whether the AI diagnosis is correct
+initial_correct,binary,Whether the initial human diagnosis is correct
+final_correct,binary,Whether the final human diagnosis is correct
+initial_confidence_log_odds,float,Log-odds transform of initial human confidence
+final_confidence_log_odds,float,Log-odds transform of final human confidence
+ai_confidence_log_odds,float,Log-odds transform of AI confidence
+ai_confidence,float,AI confidence used by the analysis
